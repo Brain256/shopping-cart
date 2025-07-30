@@ -1,0 +1,33 @@
+.home-container {
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;
+    color:white; 
+    height:100%; 
+    gap:30px; 
+}
+
+h1, h2, .store-link {
+    text-align:center; 
+    margin:0px; 
+}
+
+h1 {
+    font-size:4rem; 
+}
+
+.store-link {
+    background-color:white; 
+    padding: 10px 20px 10px 20px; 
+    color:black; 
+    border-radius:20px; 
+    text-decoration:none; 
+    font-size:1.2rem; 
+}
+
+.store-link:hover {
+    cursor:pointer; 
+    background-color:rgb(201, 201, 201); 
+    transition:ease-in 0.2s; 
+}

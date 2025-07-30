@@ -1,7 +1,24 @@
+import {useState, useEffect} from 'react'
+import Item from './Item.jsx'
+import './Store.css'
 
 function Store() {
+
+    let [ data, setData ] = useState(null);
+
+    useEffect(() => {
+        fetch('https://fakestoreapi.com/products')
+            .then(response => response.json())
+            .then(d => setData(d));
+
+        }, [])
+
     return (
-        <h1>You are on the store page</h1>
+        <div className="store-container">
+            {data != null && data.map((item) => {
+                return <div id={item.id}><Item title={item.title} price={item.price} desc={item.description} image={item.image}></Item></div>
+            })}
+        </div>
     )
 }
 

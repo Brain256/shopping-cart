@@ -1,0 +1,41 @@
+
+
+body {
+    margin:0px; 
+    font-family: 'Inter', sans-serif;
+}
+
+.page-container {
+    width:auto; 
+    height:100vh; 
+    display:flex; 
+    flex-direction:column; 
+}
+
+.nav {
+    background-color:rgb(0, 0, 0); 
+    display:flex; 
+    border-bottom: solid 5px white; 
+    position:sticky; 
+    top:0px; 
+}
+
+.nav-button {
+    padding:20px; 
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    cursor:pointer; 
+}
+
+.nav-button:hover {
+    padding:20px; 
+    background-color:rgb(54, 53, 53); 
+    transition:ease-in 0.2s; 
+}
+
+.body {
+    flex:1; 
+    background-color:black; 
+    padding:0px; 
+    color:white; 
+}
