@@ -1,6 +1,11 @@
 import './Item.css'
 
-function Item({title, price, desc, image}) {
+function Item({num, setNum, title, price, desc, image}) {
+
+    const onClick = () => {
+        setNum(num+1); 
+    }
+
     return (
         <>
             <div className="img-container"><img src={image} width="400px" height="400px"></img></div>
@@ -8,7 +13,7 @@ function Item({title, price, desc, image}) {
                 <div className="title">{title}</div>
                 <div className="bottom">
                     <div className="price">${price}</div>
-                    <button className="cart-btn">Add To Cart</button>
+                    <button className="cart-btn" onClick={onClick}>Add To Cart</button>
                 </div>
                 
             </div>

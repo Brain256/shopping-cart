@@ -18,6 +18,24 @@ body {
     border-bottom: solid 5px white; 
     position:sticky; 
     top:0px; 
+    color:white; 
+    justify-content:space-between; 
+}
+
+.nav-left {
+    display:flex; 
+}
+
+.nav-right {
+    display:flex; 
+    gap:20px; 
+    align-items:center; 
+    margin-right:20px; 
+    text-align:left; 
+}
+
+.cart, .cart-num {
+    width:50px; 
 }
 
 .nav-button {
